@@ -1,0 +1,13 @@
+[package]
+name = "shv_example"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+scripthookv_lite = { git = "https://github.com/Jaycadox/scripthookv-lite" }
+windows = { version = "0.56.0", features = ["Win32_System_SystemServices"] }
